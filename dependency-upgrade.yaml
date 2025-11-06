@@ -1,0 +1,20 @@
+name: "dependency-upgrade"
+description: "Custom dependency version management for Java migration from JDK 8/11/17 to JDK 17/21"
+
+dependencyManagement:
+  dependencies:
+    - identifier: "org.springframework.boot:spring-boot-starter-parent"
+      targetVersion: "3.5.7"
+      originType: "THIRD_PARTY"
+    - identifier: "org.projectlombok:lombok"
+      targetVersion: "1.18.42"
+      originType: "THIRD_PARTY"
+    - identifier: "org.junit.jupiter:junit-jupiter"
+      targetVersion: "5.14.1"
+      originType: "THIRD_PARTY"
+    - identifier: "org.mockito:mockito-junit-jupiter"
+      targetVersion: "5.20.0"
+      originType: "THIRD_PARTY"
+  plugins:
+    - identifier: "org.apache.maven.plugins:maven-compiler-plugin"
+      targetVersion: "3.14.1"
