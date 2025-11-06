@@ -18,3 +18,4 @@ dependencyManagement:
   plugins:
     - identifier: "org.apache.maven.plugins:maven-compiler-plugin"
       targetVersion: "3.14.1"
+      originType: "THIRD_PARTY"
