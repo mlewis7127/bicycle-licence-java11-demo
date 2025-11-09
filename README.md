@@ -17,16 +17,18 @@ Since Amazon Quantum Ledger Database (QLDB) was deprecated in July 2024, the cod
 - Java 11
 - Spring Boot (version 2.1.8.RELEASE)
 - Maven (for dependency management and build)
-- Amazon Web Services (AWS) SDK
-    - AWS Java SDK for DynamoDB (version 1.11.693)
+- Amazon Web Services (AWS) SDK (version 1.11.693)
+    - AWS Java SDK for DynamoDB
+    - AWS Java SDK for STS
 - Spring Boot Starter Dependencies:
     - spring-boot-starter-web
     - spring-boot-starter-thymeleaf
     - spring-boot-starter-data-jpa
-- Jackson Core (version 2.10.3)
-- Lombok
-- HSQLDB (for runtime, to be removed and replaced with appropriate JPA excludes)
-- JUnit Jupiter (version 5.5.2) for testing
+    - spring-boot-starter-test
+- Lombok (version 1.18.30)
+- Testing:
+    - JUnit Jupiter (version 5.5.2)
+    - Mockito (version 3.12.4)
 
 ## Pre-Requisites
 
